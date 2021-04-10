@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+$dark_shade_100: #1F2041;
+$dark_shade_75: rgba(31, 32, 65, 0.75);
+$dark_shade_50: rgba(31, 32, 65, 0.5);
+$dark_shade_25: rgba(31, 32, 65, 0.25);
+$dark_shade_5: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $dark_shade_100;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.color__type {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14.5rem;
+}
+
+/* Colors */
+.colors {
+    width: 50%;
+}
+.colors__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.colors__square {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.6rem;
+    margin-right: 4rem;
+}
+.dark_shade_100 {
+    background: $dark_shade_100;
+}
+.dark_shade_75 {
+    background: $dark_shade_75;
+}
+.dark_shade_50 {
+    background: $dark_shade_50;
+}
+.dark_shade_25 {
+    background: $dark_shade_25;
+}
+.dark_shade_5 {
+    background: $dark_shade_5;
+}
+.purple {
+    background: $purple;
+}
+.green {
+    background: $green;
+}
+.color__text {
+    display: flex;
+    align-items: center;
+}
+.colors__name {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+}
+.colors__code {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+}
+
+/* Types */
+.types {
+    width: 50%;
+}
+.types__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+}
+.h2 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+}
+.h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.body {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: $dark_shade_75;
+}
+.types__title {
+    width: 3.7rem;
+    margin-right: 3rem;
+    text-align: right;
+}
