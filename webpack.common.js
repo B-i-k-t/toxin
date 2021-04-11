@@ -19,6 +19,10 @@ module.exports = {
             template: path.resolve(__dirname, './src/index.pug'),
             filename: 'index.html',
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/form.pug'),
+            filename: 'form.html',
+        }),
         new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin(),

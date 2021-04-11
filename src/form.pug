@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title "Form elements"
+    body
+        .container 
+            form.form__elements
+                .form__first
+                    .form__caption 
+                        label(class="form__title") Text Field
+                        label(class="form__subtitle") Default
+                    input(class="text__field" placeholder="Email")
+                    .form__caption 
+                        label(class="form__title") Text Field
+                        label(class="form__subtitle") Hover / Focus
+                    input(class="text__field text__field_active" placeholder="This is pretty awesome")
