@@ -15,4 +15,37 @@ html(lang="ru")
                     .form__caption 
                         label(class="form__title") Text Field
                         label(class="form__subtitle") Hover / Focus
-                    input(class="text__field text__field_active" placeholder="This is pretty awesome")
+                    input(class="text__field text__field_active" placeholder="This is pretty awesome") 
+                    .form__caption
+                        label(class="form__title") Dropdown
+                    .dropdown__input 
+                        p(class="dropdown__caption") Сколько гостей
+                        button.dropdown__down ˅
+                    .form__caption 
+                        label(class="form__title") masked text field
+                    input(class="text__field" placeholder="ДД.ММ.ГГГГ")
+                .form__second 
+                    .form__date
+                        .form__caption
+                            label(class="form__title") date Dropdown
+                        .dropdown__input 
+                            p(class="dropdown__caption") ДД.ММ.ГГГГ
+                            button.dropdown__down ˅
+                    .form__date
+                        .form__caption
+                            label(class="form__title") date Dropdown
+                        .dropdown__input 
+                            p(class="dropdown__caption") 19.08.2019
+                            button.dropdown__down ˅
+                    .form__filter
+                        .form__caption
+                            label(class="form__title") filter date dropdown
+                        .dropdown__input 
+                            p(class="dropdown__caption") 19 авг - 23 авг
+                            button.dropdown__down ˅
+                    .form__subscription 
+                        .form__caption
+                            label(class="form__title") subscription text field
+                        .subscription__input 
+                            p(class="subscription__caption") Email
+                            button.subscription__right ⟶
