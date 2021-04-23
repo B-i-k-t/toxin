@@ -311,3 +311,91 @@ $green: #6FCF97;
     line-height: 1.71;
     color: $dark_shade_75;
 }
+
+/* TOGGLE */
+.toggles__item {
+  display: flex;
+  align-items: center;
+  width: 26rem;
+}
+.tgl {
+  display: none;
+  
+  // add default box-sizing for this scope
+  &,
+  &:after,
+  &:before,
+  & *,
+  & *:after,
+  & *:before,
+  & + .tgl-btn {
+    box-sizing: border-box;
+    &::selection {
+      background: none;
+    }
+  }
+  
+  + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+    }
+    
+    &:after {
+      left: 0;
+    }
+    
+    &:before {
+      display: none;
+    }
+  }
+  
+  &:checked + .tgl-btn:after {
+    left: 50%;
+  }
+}
+.tgl-flat {
+  + .tgl-btn {
+    padding: 3px;
+    transition: all .2s ease;
+    background: #fff;
+    border: 1px solid $dark_shade_25;
+    border-radius: 1rem;
+    &:after {
+      width: 1.2rem;
+      height: 1.2rem;
+      transition: all .2s ease;
+      background: $dark_shade_25;
+      content: "";
+      border-radius: 1rem;
+    }
+  }
+  
+  &:checked + .tgl-btn {
+    border: 1px solid $purple;
+    &:after {
+      width: 1.2rem;
+      height: 1.2rem;
+      left: 50%;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+  }
+}
+.toggle__text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: $dark_shade_75;
+  margin-left: 1rem;
+}
