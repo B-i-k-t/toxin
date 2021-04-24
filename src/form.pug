@@ -50,22 +50,29 @@ html(lang="ru")
                             p(class="subscription__caption") Email
                             button.subscription__right ⟶
                 .form__third 
+                    .form__caption
+                        label(class="form__title") Checkbox Buttons
                     .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="buttons-1" name="buttons-1" value="smoke")
-                        label(for="buttons-1" class="checkbox__text") Можно курить
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="buttons-2" name="buttons-2" value="pet")
-                        label(for="buttons-2" class="checkbox__text") Можно с питомцами
-                    .checkbox
-                        input(class="custom-checkbox" type="checkbox" id="buttons-3" name="buttons-3" value="guests")
-                        label(for="buttons-3" class="checkbox__text") Можно пригласить гостей (до 10 человек)
+                        .checkbox__item 
+                            input(class="custom-checkbox" type="checkbox" id="buttons-1" name="buttons-1" value="smoke")
+                            label(for="buttons-1" class="checkbox__text") Можно курить
+                        .checkbox__item 
+                            input(class="custom-checkbox" type="checkbox" id="buttons-2" name="buttons-2" value="pet")
+                            label(for="buttons-2" class="checkbox__text") Можно с питомцами
+                        .checkbox__item 
+                            input(class="custom-checkbox" type="checkbox" id="buttons-3" name="buttons-3" value="guests")
+                            label(for="buttons-3" class="checkbox__text") Можно пригласить гостей (до 10 человек)
+                    .form__caption
+                        label(class="form__title") Radio Buttons
                     .radiobuttons 
                         .radio
                             input(class="custom-radio" type="radio" id="pol-1" name="pol" value="man")
                             label(for="pol-1" class="radio__text") Мужчина
                         .radio
                             input(class="custom-radio" type="radio" id="pol-2" name="pol" value="woman")
-                            label(for="pol-2" class="radio__text") Женщина
+                            label(for="pol-2" class="radio__text") Женщина                    
+                    .form__caption
+                        label(class="form__title") Toggle
                     .toggles
                         .toggles__item
                             .toggle 
@@ -77,3 +84,37 @@ html(lang="ru")
                                 input#cb2.tgl.tgl-flat(type = "checkbox")
                                 label.tgl-btn(for = "cb2")
                             p.toggle__text Получать спецпредложения
+                    .form__caption
+                        label(class="form__title") like button
+                    .likes 
+                        .like 
+                            p.like__img ♡
+                            p.like__counter 2 
+                        .like.like_active
+                            p.like__img.like__img_active ♡
+                            p.like__counter.like__counter_active 12
+                    .form__caption
+                        label(class="form__title") rate button
+                    .rates
+                        .rate
+                            input(type="radio" id="star5" name="rate" value="5")
+                            label(for="star5" title="text")
+                            input(type="radio" id="star4" name="rate" value="4")
+                            label(for="star4" title="text")
+                            input(type="radio" id="star3" name="rate" value="3")
+                            label(for="star3" title="text")
+                            input(type="radio" id="star2" name="rate" value="2")
+                            label(for="star2" title="text")
+                            input(type="radio" id="star1" name="rate" value="1")
+                            label(for="star1" title="text")
+                        .rate
+                            input(type="radio" id="star5" name="rate" value="5")
+                            label(for="star5" title="text")
+                            input(type="radio" id="star4" name="rate" value="4")
+                            label(for="star4" title="text")
+                            input(type="radio" id="star3" name="rate" value="3")
+                            label(for="star3" title="text")
+                            input(type="radio" id="star2" name="rate" value="2")
+                            label(for="star2" title="text")
+                            input(type="radio" id="star1" name="rate" value="1")
+                            label(for="star1" title="text")

@@ -7,9 +7,18 @@ $dark_shade_5: rgba(31, 32, 65, 0.05);
 $purple: #BC9CFF;
 $green: #6FCF97;
 
+.form__elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 14rem;
+  grid-column-gap: 12.6rem;
+}
 .form__first {
     width: 32rem;
-    margin-top: 14rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 .form__caption {
     display: flex;
@@ -110,6 +119,10 @@ $green: #6FCF97;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .form__date {
     width: 15rem;
@@ -156,6 +169,10 @@ $green: #6FCF97;
 .form__third {
     width: 23rem;
     margin-bottom: 4rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 /* CHECKBOX */
@@ -228,6 +245,10 @@ $green: #6FCF97;
   }
 
   .checkbox {
+    margin-bottom: 4rem;
+    margin-top: 1.6rem;
+  }
+  .checkbox__item {
     margin-bottom: 1rem;
   }
 
@@ -235,7 +256,7 @@ $green: #6FCF97;
   .radiobuttons {
     display: flex;
     margin-right: -2rem;
-    margin-top: 3rem;
+    margin-top: 1.6rem;
     margin-bottom: 4rem;
   }
   .radio {
@@ -313,6 +334,10 @@ $green: #6FCF97;
 }
 
 /* TOGGLE */
+.toggles {
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
 .toggles__item {
   display: flex;
   align-items: center;
@@ -397,5 +422,88 @@ $green: #6FCF97;
   font-size: 1.4rem;
   line-height: 1.71;
   color: $dark_shade_75;
-  margin-left: 1rem;
+  margin: 0 0 1rem 1rem;
+  padding: 0;
+
+}
+
+/* LIKE */
+.likes {
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 1.6rem;
+}
+.like {
+  display: flex;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  background: #FFFFFF;
+  border: 1px solid $dark_shade_25;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.like__img {
+  width: 50%;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: .9;
+  text-align: center;
+  color: $dark_shade_25;
+}
+.like__counter {
+  width: 50%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: $dark_shade_25;
+}
+.like:focus, .like:hover, .like:active, .like_active {
+  border: 1px solid $purple;
+}
+.like__img_active, .like__counter_active {
+  color: $purple;
+}
+
+/* RATE */
+.rates {
+  display: flex;
+  margin-top: 1.6rem;
+  margin-bottom: 4rem;
+}
+.rate {
+  height: 2.4rem;
+  width: 12rem;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:2.4rem;
+  line-height: 2rem;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: $purple;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: $purple;   
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: $purple; 
 }
