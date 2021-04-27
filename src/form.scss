@@ -109,6 +109,7 @@ $green: #6FCF97;
     background: #FFFFFF;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 .dropdown__down:hover, .dropdown__down:focus {
     color: $dark_shade_75;
@@ -162,6 +163,7 @@ $green: #6FCF97;
     background: #FFFFFF;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 .subscription__right:focus, .subscription__right:hover {
     color: #8BA4F9;
@@ -206,6 +208,7 @@ $green: #6FCF97;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
+    cursor: pointer;
   }
   /* стили текста чекбокса */
   .checkbox__text {
@@ -293,6 +296,7 @@ $green: #6FCF97;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
+    cursor: pointer;
   }
 
   /* стили при наведении курсора на радио */
@@ -685,4 +689,90 @@ $green: #6FCF97;
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: $dark_shade_75;
+}
+
+/* DROPDOWN */
+.form__five {
+  display: flex;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.dropdown__notsubmit {
+  width: 32rem;
+}
+.dropdown__submit {
+  width: 32rem;
+}
+.dropdown__clear {
+  width: 32rem;
+}
+.dropdown__input_expanded {
+  border: 1px solid $dark_shade_50;
+}
+.dropdown__expand {
+  background: #FFFFFF;
+  border: 1px solid $dark_shade_50;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -2rem;
+}
+.dropdown__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown__buttons {
+  width: 9.2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: .7rem;
+  align-items: center;
+}
+.dropdown__text  {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: $dark_shade_100;
+  margin-left: 1.5rem;
+}
+.dropdown__button {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid $dark_shade_25;
+  border-radius: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dropdown__button_noactiv {
+  cursor: none;
+  opacity: .3;
+}
+.dropdown__counter {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: $dark_shade_100;
+}
+.dropdown__znak {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: $dark_shade_50;
+  padding: 0;
+  margin: 0;
+}
+.dropdown__icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.9rem -1.3rem -1.7rem 1.4rem;
 }
