@@ -269,4 +269,56 @@ html(lang="ru")
                                         p.icon__text очистить
                                     .icon__link
                                         p.icon__text применить
+                // form__five end
+                .form__six     
+                    .expandable 
+                        .expandable__list 
+                            .expandable__input
+                                p.expandable__caption expandable checkbox list
+                                button.dropdown__down ˅
+                        div(class="expandable__list_active")
+                            .expandable__input
+                                p.expandable__caption expandable checkbox list
+                                button.dropdown__up ^
+                            .expandable__items 
+                                .checkbox__item 
+                                    input(class="custom-checkbox" type="checkbox" id="expandable-1" name="expandable-1" value="breakfast")
+                                    label(for="expandable-1" class="checkbox__text") Завтрак
+                                .checkbox__item 
+                                    input(class="custom-checkbox" type="checkbox" id="expandable-2" name="expandable-2" value="table")
+                                    label(for="expandable-2" class="checkbox__text") Письменный стол
+                                .checkbox__item 
+                                    input(class="custom-checkbox" type="checkbox" id="expandable-3" name="expandable-3" value="chair")
+                                    label(for="expandable-3" class="checkbox__text") Стул для кормления
+                                .checkbox__item 
+                                    input(class="custom-checkbox" type="checkbox" id="expandable-4" name="expandable-4" value="bed")
+                                    label(for="expandable-4" class="checkbox__text") Кроватка
+                                .checkbox__item 
+                                    input(class="custom-checkbox" type="checkbox" id="expandable-5" name="expandable-5" value="tv")
+                                    label(for="expandable-5" class="checkbox__text") Телевизор
+                                .checkbox__item 
+                                    input(class="custom-checkbox" type="checkbox" id="expandable-6" name="expandable-6" value="shampoo")
+                                    label(for="expandable-6" class="checkbox__text") Шампунь
+                    .rich__check 
+                        p.rich__title rich Checkbox Buttons
+                        .rich__item 
+                            input(class="rich-checkbox" type="checkbox" id="rich-1" name="rich-1" value="koridor")
+                            label(for="rich-1" class="rich__caption") Широкий коридор
+                            p.rich__text Ширина коридоров в номере не менее 91 см.
+                        .rich__item 
+                            input(class="rich-checkbox" type="checkbox" id="rich-2" name="rich-2" value="help")
+                            label(for="rich-2" class="rich__caption") Помощник для инвалидов
+                            p.rich__text На 1 этаже вас встретит специалист  и проводит до номера.
+                    .bullet 
+                        p.bullet__list bullet list
+                        .bullet__item 
+                            .bullet__marker 
+                            p.bullet__text Нельзя с питомцами
+                        .bullet__item 
+                            .bullet__marker 
+                            p.bullet__text Без вечеринок и мероприятий
+                        .bullet__item 
+                            .bullet__marker
+                            p.bullet__text Время прибытия — после 13:00, а выезд до 12:00
+                //form__six end
 
