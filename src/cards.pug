@@ -5,4 +5,29 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title "Cards"
     body
-        .container 
+        .container
+            .rooms 
+                p.rooms__title Найдём номера под ваши пожелания
+                .rooms__dates 
+                    .form__date
+                        .form__caption
+                            label(class="form__title") прибытие
+                        .dropdown__input 
+                            p(class="dropdown__caption") ДД.ММ.ГГГГ
+                            button.dropdown__down ˅
+                    .form__date
+                        .form__caption
+                            label(class="form__title") выезд
+                        .dropdown__input 
+                            p(class="dropdown__caption") ДД.ММ.ГГГГ
+                            button.dropdown__down ˅
+                .rooms__guests 
+                    .form__caption
+                        label(class="form__title") Dropdown
+                    .dropdown__input 
+                        p(class="dropdown__caption") Сколько гостей
+                        button.dropdown__down ˅
+                .rooms__button
+                    .button__pay 
+                            p.pay__text подобрать номер
+                            p.pay__arrow &rarr;
