@@ -524,6 +524,47 @@ $green: #6FCF97;
   grid-row-end: 3;
 }
 
+/* RANGE SLIDER */
+.range__foundation {
+  position: relative;
+  width: 26.6rem;
+  height: .6rem;
+  background: #FFFFFF;
+  border: 1px solid $dark_shade_25;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 4.3rem;
+  margin-top: 2.3rem;
+}
+.range__line {
+  position: absolute;
+  width: 8.8rem;
+  height: .6rem;
+  left: 8.2rem;
+  top: 0;
+  background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+  border-radius: .3rem;
+}
+.range__min {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 7.7rem;
+  top: -0.5rem;
+  background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 1rem;
+}
+.range__max {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 16.2rem;
+  top: -0.5rem;
+  background: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 1rem;
+}
 /* BUTTONS */
 .form__buttons {
   display: flex;
