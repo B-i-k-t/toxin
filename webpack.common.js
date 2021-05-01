@@ -23,6 +23,14 @@ module.exports = {
             template: path.resolve(__dirname, './src/form.pug'),
             filename: 'form.html',
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/cards.pug'),
+            filename: 'cards.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/headers&footers.pug'),
+            filename: 'headers&footers.html',
+        }),
         new CleanWebpackPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin(),
