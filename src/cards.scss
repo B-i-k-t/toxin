@@ -10,26 +10,26 @@ $green: #6FCF97;
     margin-top: 15rem;
 }
 /* ROOMS */
-.rooms {
+.blocks {
     width: 38rem;
-    height: 37.4rem;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 4rem 3rem 3rem;
+    margin-bottom: 4rem;
 }
-.rooms__title {
+.blocks__title {
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 2.9rem;
     color: $dark_shade_100;
     padding: 0;
     margin: 0;
-    margin-bottom: 2.1rem;
+    margin-bottom: 2rem;
 }
-.rooms__dates {
+.blocks__dates {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
@@ -37,9 +37,44 @@ $green: #6FCF97;
 .form__date {
     margin-bottom: 0;
 }
-.dropdown__input {
+.dropdown__input_blocks {
     margin: 0;
 }
-.rooms__button {
+.blocks__guests {
+    margin-bottom: 1rem;
+} 
+.blocks__button {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.button__pay_blocks {
+    margin-bottom: 0;
+}
+/* REGISTRATION */
+.blocks__radiobuttons {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.text__field_blocks {
+    margin-bottom: 1rem;
+}
+.toggle__text_blocks {
+    margin-bottom: 0;
+}
+.blocks__sign {
     margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blocks__signin {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: $dark_shade_100;
+    margin: 0;
+    padding: 0;
+}
+.block__button {
+    margin: 0;
 }

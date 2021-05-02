@@ -6,28 +6,59 @@ html(lang="ru")
         title "Cards"
     body
         .container
-            .rooms 
-                p.rooms__title Найдём номера под ваши пожелания
-                .rooms__dates 
+            .blocks 
+                p.blocks__title Найдём номера под ваши пожелания
+                .blocks__dates 
                     .form__date
                         .form__caption
                             label(class="form__title") прибытие
-                        .dropdown__input 
+                        .dropdown__input.dropdown__input_blocks 
                             p(class="dropdown__caption") ДД.ММ.ГГГГ
                             button.dropdown__down ˅
                     .form__date
                         .form__caption
                             label(class="form__title") выезд
-                        .dropdown__input 
+                        .dropdown__input.dropdown__input_blocks 
                             p(class="dropdown__caption") ДД.ММ.ГГГГ
                             button.dropdown__down ˅
-                .rooms__guests 
+                .blocks__guests 
                     .form__caption
                         label(class="form__title") Dropdown
-                    .dropdown__input 
+                    .dropdown__input.dropdown__input_blocks
                         p(class="dropdown__caption") Сколько гостей
                         button.dropdown__down ˅
-                .rooms__button
-                    .button__pay 
+                .blocks__button
+                    .button__pay.button__pay_blocks 
                             p.pay__text подобрать номер
                             p.pay__arrow &rarr;
+            .blocks 
+                p.blocks__title Регистрация аккаунта
+                input(class="text__field" placeholder="Имя")
+                input(class="text__field" placeholder="Фамилия")
+                .blocks__radiobuttons 
+                    .radio
+                        input(class="custom-radio" type="radio" id="pol-1" name="pol" value="man")
+                        label(for="pol-1" class="radio__text") Мужчина
+                    .radio
+                        input(class="custom-radio" type="radio" id="pol-2" name="pol" value="woman")
+                        label(for="pol-2" class="radio__text") Женщина
+                .form__caption 
+                    label(class="form__title") дата рождения
+                input(class="text__field" placeholder="ДД.ММ.ГГГГ")
+                .form__caption 
+                    label(class="form__title") данные для входа в сервис
+                input(class="text__field text__field_blocks" placeholder="Email")
+                input(class="text__field" placeholder="Пароль")
+                .toggles__item
+                    .toggle 
+                        input#cb1.tgl.tgl-flat(type = "checkbox")
+                        label.tgl-btn(for = "cb1")
+                    p.toggle__text.toggle__text_blocks Получать спецпредложения
+                .blocks__button
+                    .button__pay.button__pay_blocks 
+                            p.pay__text перейти к оплате
+                            p.pay__arrow &rarr;
+                .blocks__sign 
+                    p.blocks__signin Уже есть аккаунт на Toxin
+                    .button.button__transparent.block__button 
+                        p.button__text.button__text_purple войти
