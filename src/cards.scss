@@ -9,6 +9,20 @@ $green: #6FCF97;
 .container {
     margin-top: 15rem;
 }
+.grid__first {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid__second {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 /* ROOMS */
 .blocks {
     width: 38rem;
@@ -77,4 +91,93 @@ $green: #6FCF97;
 }
 .block__button {
     margin: 0;
+}
+
+/* ROOM IN HOTEL */
+.room__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.room__subtitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.room__caption {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $purple;
+    padding: 0;
+    margin: 0;
+    margin-right: 8rem;
+}
+.room__price {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: $dark_shade_50;
+    padding: 0;
+    margin: 0;
+}
+.blocks__desc {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.blocks__sbor {
+    display: flex;
+    justify-content: space-between;
+    width: 24rem;
+}
+.blocks__uslugi {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.73;
+    color: $dark_shade_75;
+    padding: 0;
+    margin: 0;
+}
+.blocks__info {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid $dark_shade_25;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.blocks__i {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.17;
+    color: $dark_shade_25;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.blocks__calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.blocks__sum {
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    color: $dark_shade_100;
+    padding: 0;
+    margin: 0;
+}
+.blocks__dots {
+    width: 17rem;
+    height: 1px;
+    border: 1px dashed $dark_shade_25;
+    box-sizing: border-box;
 }
