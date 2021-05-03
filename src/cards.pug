@@ -6,111 +6,124 @@ html(lang="ru")
         title "Cards"
     body
         .container
-            .grid__first
-                .blocks 
-                    p.blocks__title Найдём номера под ваши пожелания
-                    .blocks__dates 
-                        .form__date
+            .grids
+                .grid__first
+                    .blocks 
+                        p.blocks__title Найдём номера под ваши пожелания
+                        .blocks__dates 
+                            .form__date
+                                .form__caption
+                                    label(class="form__title") прибытие
+                                .dropdown__input.dropdown__input_blocks 
+                                    p(class="dropdown__caption") ДД.ММ.ГГГГ
+                                    button.dropdown__down ˅
+                            .form__date
+                                .form__caption
+                                    label(class="form__title") выезд
+                                .dropdown__input.dropdown__input_blocks 
+                                    p(class="dropdown__caption") ДД.ММ.ГГГГ
+                                    button.dropdown__down ˅
+                        .blocks__guests 
                             .form__caption
-                                label(class="form__title") прибытие
-                            .dropdown__input.dropdown__input_blocks 
-                                p(class="dropdown__caption") ДД.ММ.ГГГГ
+                                label(class="form__title") Dropdown
+                            .dropdown__input.dropdown__input_blocks
+                                p(class="dropdown__caption") Сколько гостей
                                 button.dropdown__down ˅
-                        .form__date
+                        .blocks__button
+                            .button__pay.button__pay_blocks 
+                                    p.pay__text подобрать номер
+                                    p.pay__arrow &rarr;
+                    .blocks 
+                        p.blocks__title Регистрация аккаунта
+                        input(class="text__field text__field_blocks" placeholder="Имя")
+                        input(class="text__field text__field_blocks" placeholder="Фамилия")
+                        .blocks__radiobuttons 
+                            .radio
+                                input(class="custom-radio" type="radio" id="pol-1" name="pol" value="man")
+                                label(for="pol-1" class="radio__text") Мужчина
+                            .radio
+                                input(class="custom-radio" type="radio" id="pol-2" name="pol" value="woman")
+                                label(for="pol-2" class="radio__text") Женщина
+                        .form__caption 
+                            label(class="form__title") дата рождения
+                        input(class="text__field" placeholder="ДД.ММ.ГГГГ")
+                        .form__caption 
+                            label(class="form__title") данные для входа в сервис
+                        input(class="text__field text__field_blocks" placeholder="Email")
+                        input(class="text__field" placeholder="Пароль")
+                        .toggles__item
+                            .toggle 
+                                input#cb1.tgl.tgl-flat(type = "checkbox")
+                                label.tgl-btn(for = "cb1")
+                            p.toggle__text.toggle__text_blocks Получать спецпредложения
+                        .blocks__button
+                            .button__pay.button__pay_blocks 
+                                    p.pay__text перейти к оплате
+                                    p.pay__arrow &rarr;
+                        .blocks__sign 
+                            p.blocks__signin Уже есть аккаунт на Toxin
+                            .button.button__transparent.block__button 
+                                p.button__text.button__text_purple войти
+                // FIRST COLUMN END
+                .grid__second
+                    .blocks 
+                        .room__title
+                            p.blocks__title № 888
+                            .room__subtitle 
+                                p.room__caption люкс
+                                p.room__price 9 990₽ в сутки
+                        .blocks__dates 
+                            .form__date
+                                .form__caption
+                                    label(class="form__title") прибытие
+                                .dropdown__input.dropdown__input_blocks 
+                                    p(class="dropdown__caption") 19.08.2019
+                                    button.dropdown__down ˅
+                            .form__date
+                                .form__caption
+                                    label(class="form__title") выезд
+                                .dropdown__input.dropdown__input_blocks 
+                                    p(class="dropdown__caption") 23.08.2019
+                                    button.dropdown__down ˅
+                        .blocks__guests 
                             .form__caption
-                                label(class="form__title") выезд
-                            .dropdown__input.dropdown__input_blocks 
-                                p(class="dropdown__caption") ДД.ММ.ГГГГ
+                                label(class="form__title") Dropdown
+                            .dropdown__input.dropdown__input_blocks
+                                p(class="dropdown__caption") 3 гостя
                                 button.dropdown__down ˅
-                    .blocks__guests 
-                        .form__caption
-                            label(class="form__title") Dropdown
-                        .dropdown__input.dropdown__input_blocks
-                            p(class="dropdown__caption") Сколько гостей
-                            button.dropdown__down ˅
-                    .blocks__button
-                        .button__pay.button__pay_blocks 
-                                p.pay__text подобрать номер
-                                p.pay__arrow &rarr;
-                .blocks 
-                    p.blocks__title Регистрация аккаунта
-                    input(class="text__field" placeholder="Имя")
-                    input(class="text__field" placeholder="Фамилия")
-                    .blocks__radiobuttons 
-                        .radio
-                            input(class="custom-radio" type="radio" id="pol-1" name="pol" value="man")
-                            label(for="pol-1" class="radio__text") Мужчина
-                        .radio
-                            input(class="custom-radio" type="radio" id="pol-2" name="pol" value="woman")
-                            label(for="pol-2" class="radio__text") Женщина
-                    .form__caption 
-                        label(class="form__title") дата рождения
-                    input(class="text__field" placeholder="ДД.ММ.ГГГГ")
-                    .form__caption 
-                        label(class="form__title") данные для входа в сервис
-                    input(class="text__field text__field_blocks" placeholder="Email")
-                    input(class="text__field" placeholder="Пароль")
-                    .toggles__item
-                        .toggle 
-                            input#cb1.tgl.tgl-flat(type = "checkbox")
-                            label.tgl-btn(for = "cb1")
-                        p.toggle__text.toggle__text_blocks Получать спецпредложения
-                    .blocks__button
-                        .button__pay.button__pay_blocks 
-                                p.pay__text перейти к оплате
-                                p.pay__arrow &rarr;
-                    .blocks__sign 
-                        p.blocks__signin Уже есть аккаунт на Toxin
-                        .button.button__transparent.block__button 
-                            p.button__text.button__text_purple войти
-            // FIRST COLUMN END
-            .grid__second
-                .blocks 
-                    .room__title
-                        p.blocks__title № 888
-                        .room__subtitle 
-                            p.room__caption люкс
-                            p.room__price 9 990₽ в сутки
-                    .blocks__dates 
-                        .form__date
-                            .form__caption
-                                label(class="form__title") прибытие
-                            .dropdown__input.dropdown__input_blocks 
-                                p(class="dropdown__caption") 19.08.2019
-                                button.dropdown__down ˅
-                        .form__date
-                            .form__caption
-                                label(class="form__title") выезд
-                            .dropdown__input.dropdown__input_blocks 
-                                p(class="dropdown__caption") 23.08.2019
-                                button.dropdown__down ˅
-                    .blocks__guests 
-                        .form__caption
-                            label(class="form__title") Dropdown
-                        .dropdown__input.dropdown__input_blocks
-                            p(class="dropdown__caption") 3 гостя
-                            button.dropdown__down ˅
-                    .blocks__desc 
-                        p.blocks__uslugi 9 990₽ х 4 суток
-                        p.blocks__uslugi 39 960₽
-                    .blocks__desc 
-                        .blocks__sbor
-                            p.blocks__uslugi Сбор за услуги: скидка 2 179₽
-                            .blocks__info 
-                                p.blocks__i i
-                        p.blocks__uslugi 0₽
-                    .blocks__desc
-                        .blocks__sbor
-                            p.blocks__uslugi Сбор за дополнительные услуги
-                            .blocks__info 
-                                p.blocks__i i
-                        p.blocks__uslugi 300₽
-                    .blocks__calc 
-                        p.blocks__sum Итого
-                        .blocks__dots 
-                        p.blocks__sum 38 081₽
-                    .blocks__button
-                        .button__pay.button__pay_blocks 
-                                p.pay__text забронировать
-                                p.pay__arrow &rarr;
-            // SECOND COLUMN END
+                        .blocks__desc 
+                            p.blocks__uslugi 9 990₽ х 4 суток
+                            p.blocks__uslugi 39 960₽
+                        .blocks__desc 
+                            .blocks__sbor
+                                p.blocks__uslugi Сбор за услуги: скидка 2 179₽
+                                .blocks__info 
+                                    p.blocks__i i
+                            p.blocks__uslugi 0₽
+                        .blocks__desc
+                            .blocks__sbor
+                                p.blocks__uslugi Сбор за дополнительные услуги
+                                .blocks__info 
+                                    p.blocks__i i
+                            p.blocks__uslugi 300₽
+                        .blocks__calc 
+                            p.blocks__sum Итого
+                            .blocks__dots 
+                            p.blocks__sum 38 081₽
+                        .blocks__button
+                            .button__pay.button__pay_blocks 
+                                    p.pay__text забронировать
+                                    p.pay__arrow &rarr;
+                    .blocks 
+                        p.blocks__title Войти
+                        input(class="text__field text__field_blocks" placeholder="Email")
+                        input(class="text__field text__field_blocks" placeholder="Пароль")                    
+                        .blocks__button
+                            .button__pay.button__pay_blocks 
+                                    p.pay__text войти
+                                    p.pay__arrow &rarr;
+                        .blocks__sign 
+                            p.blocks__signin Нет аккаунта на Toxin?
+                            .button.button__transparent.block__button 
+                                p.button__text.button__text_purple создать
+                // SECOND COLUMN END
