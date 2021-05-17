@@ -28,6 +28,13 @@ $green: #6FCF97;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+.grid__third {
+    width: 38rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 /* ROOMS */
 .blocks {
     width: 38rem;
@@ -185,4 +192,55 @@ $green: #6FCF97;
     height: 1px;
     border: 1px dashed $dark_shade_25;
     box-sizing: border-box;
+}
+
+/* ROOM DESCRIPTION */
+.blocks__room {
+    width: 27rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: content-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 4rem;
+}
+.block__room {
+    width: 27rem;
+    padding: 0;
+    margin: 0;
+}
+.room__foto {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.room__desc {
+    display: flex;
+    width: 27rem;
+}
+.room__reviews {
+    display: flex;
+    width: 27rem;
+}
+.room__number {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $dark_shade_100;
+}
+.room__price {
+    display: flex;
+    justify-content: space-between;
+}
+.room__class {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    color: $purple;
+}
+.room__calc {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    color: $dark_shade_50;
 }
