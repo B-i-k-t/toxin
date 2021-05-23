@@ -129,10 +129,10 @@ html(lang="ru")
                     
                 // SECOND COLUMN END
                 .grid__third 
-                    .blocks
+                    .blocks__kalendar
                         input(type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here")
-                    .blocks__room    
-                        .block__room 
+                    .blocks__room 
+                        .block__img 
                             img(src="/img/room888.jpg", alt="room foto" class="room__foto")
                             .room__slider
                                 .room__left 
@@ -142,29 +142,57 @@ html(lang="ru")
                                     .room__dot.room__dot_2 
                                     .room__dot.room__dot_3 
                                     .room__dot.room__dot_4 
+                        .block__room                             
                             .room__desc 
-                                p.room__number №888
-                                .room__price 
-                                    p.room__class Люкс
-                                    p.room__calc 9 990₽ в сутки
+                                .room__title
+                                    p.room__number № 888
+                                    .room__sub 
+                                        p.room__caption люкс
+                                        p.room__price 9 990₽ в сутки
+                            .hr
                             .room__reviews
-                                .room__star
+                                .rate
+                                    input(type="radio" id="star5" name="rate" value="5")
+                                    label(for="star5" title="text")
+                                    input(type="radio" id="star4" name="rate" value="4")
+                                    label(for="star4" title="text")
+                                    input(type="radio" id="star3" name="rate" value="3")
+                                    label(for="star3" title="text")
+                                    input(type="radio" id="star2" name="rate" value="2")
+                                    label(for="star2" title="text")
+                                    input(type="radio" id="star1" name="rate" value="1")
+                                    label(for="star1" title="text")
                                 p.room__calc 145 Отзывов
                     .blocks__room    
-                        .block__room 
+                        .block__img 
+                            img(src="/img/room840.jpg", alt="room foto" class="room__foto")
                             .room__slider
-                                img(src="/img/room840.jpg", alt="room foto" class="room__foto")
+                                .room__left 
+                                .room__right 
                                 .room__dots 
                                     .room__dot.room__dot_1 
                                     .room__dot.room__dot_2 
                                     .room__dot.room__dot_3 
                                     .room__dot.room__dot_4 
+                        .block__room 
                             .room__desc 
-                                p.room__number
-                                .room__price 
-                                    p.room__class №840
-                                    p.room__calc 9 990₽ в сутки
+                                .room__title
+                                    p.room__number № 840
+                                    .room__sub
+                                        p.room__caption
+                                        p.room__price 9 990₽ в сутки
+                            .hr
                             .room__reviews
-                                .room__star
+                                .rate
+                                    input(type="radio" id="star5" name="rate" value="5")
+                                    label(for="star5" title="text")
+                                    input(type="radio" id="star4" name="rate" value="4")
+                                    label(for="star4" title="text")
+                                    input(type="radio" id="star3" name="rate" value="3")
+                                    label(for="star3" title="text")
+                                    input(type="radio" id="star2" name="rate" value="2")
+                                    label(for="star2" title="text")
+                                    input(type="radio" id="star1" name="rate" value="1")
+                                    label(for="star1" title="text")
                                 p.room__calc 65 Отзывов
                 // THIRD COLUMN END
