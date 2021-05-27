@@ -111,19 +111,19 @@ $green: #6FCF97;
     color: $dark_shade_100;
 }
 .footer__link {
-    width: 100%;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.7rem;
     color: $dark_shade_50;
-    text-decoration: none;
-
+    margin-top: 2rem;
+    cursor: pointer;
 }
 .footer__subscript {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: $dark_shade_75;
+    margin: 2rem 0;
 }
 .footer__title {
     max-width: 26rem;
@@ -131,10 +131,17 @@ $green: #6FCF97;
 .footer__copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 7rem;
 }
 .footer__text {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.7rem;
     color: $dark_shade_75;
+}
+.footer__small {
+    padding: 12rem 10.4rem;
+    margin: 0 33.6rem;
+    text-align: center;
 }
